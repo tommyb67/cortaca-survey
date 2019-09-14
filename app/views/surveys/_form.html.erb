@@ -1,0 +1,67 @@
+<%= form_with(model: survey, local: true) do |form| %>
+  <% if survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% survey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :school %>
+    <%= form.text_field :school %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duration %>
+    <%= form.text_field :duration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hotel %>
+    <%= form.text_field :hotel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tailgating %>
+    <%= form.text_field :tailgating %>
+  </div>
+
+  <div class="field">
+    <%= form.label :taillocation %>
+    <%= form.text_area :taillocation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bar_friday %>
+    <%= form.text_area :bar_friday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :after_bar_saturday %>
+    <%= form.text_area :after_bar_saturday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kappa %>
+    <%= form.text_field :kappa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beta %>
+    <%= form.text_field :beta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

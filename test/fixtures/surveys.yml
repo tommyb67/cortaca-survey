@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  school: MyString
+  duration: MyString
+  hotel: MyString
+  tailgating: 
+  taillocation: MyText
+  bar_friday: MyText
+  after_bar_saturday: MyText
+  kappa: 
+  beta: 
+  age: 1
+
+two:
+  school: MyString
+  duration: MyString
+  hotel: MyString
+  tailgating: 
+  taillocation: MyText
+  bar_friday: MyText
+  after_bar_saturday: MyText
+  kappa: 
+  beta: 
+  age: 1
